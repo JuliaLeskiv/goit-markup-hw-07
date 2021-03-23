@@ -1,0 +1,37 @@
+.footer {
+  background: var(--graphite);
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.contact__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.contacts-location {
+  color: var(--white-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contacts {
+  color: var(--grey-text-op60);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-top: 9px;
+}
