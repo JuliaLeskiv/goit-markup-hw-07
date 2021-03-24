@@ -75,7 +75,7 @@
   fill: var(--blue-text);
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -84,7 +84,7 @@
   color: var(--black-text);
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
@@ -97,7 +97,7 @@
   margin-top: 12px;
 }
 
-.form-label {
+.form-field__label {
   display: inline-block;
   margin-bottom: 4px;
 
@@ -108,15 +108,15 @@
   color: var(--grey-text);
 }
 
-.form-label:last-child {
+.form-field__label:last-child {
   margin-bottom: 0;
 }
 
-.input-wrapper {
+.form-field__input-wrapper {
   position: relative;
 }
 
-.form-input {
+.form-field__input {
   width: 100%;
   padding: 12px 12px 12px 42px;
 
@@ -125,14 +125,14 @@
 
   transition-property: border-color;
   @extend %transitDurTiming;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--blue-text);
+  }
 }
 
-.form-input:focus {
-  outline: none;
-  border: 1px solid var(--blue-text);
-}
-
-.form-comment {
+.form-field__comment {
   resize: none;
   min-height: 120px;
   width: 100%;
@@ -144,22 +144,22 @@
 
   transition-property: border-color;
   @extend %transitDurTiming;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+
+    color: var(--placeholder);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--blue-text);
+  }
 }
 
-.form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-
-  color: var(--placeholder);
-}
-
-.form-comment:focus {
-  outline: none;
-  border: 1px solid var(--blue-text);
-}
-
-.input-icon {
+.form-field__input--icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -175,20 +175,20 @@
   @extend %transitDurTiming;
 }
 
-.form-input:focus + .input-icon {
+.form-field__input:focus + .form-field__input--icon {
   fill: var(--blue-text);
 }
 
-.form-input.form-comment {
+.form-field__input.form-field__comment {
   height: 120px;
 }
 
 /* -----Checkbox styles----- */
-.checkbox-field {
+.form-field__checkbox-field {
   margin-top: 20px;
 }
 
-.checkbox-label {
+.checkbox__label {
   @include flexCenter;
 
   font-size: 14px;
@@ -199,7 +199,6 @@
 }
 
 .checkbox-icon {
-  display: none;
   margin-right: 7px;
 
   width: 16px;
@@ -225,13 +224,13 @@
   border: 0px solid transparent;
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--blue-text);
   text-decoration: underline;
 }
 
 /* button */
-.form-submit {
+.form-field_form-submit {
   display: flex;
   justify-content: center;
 }
@@ -266,54 +265,11 @@
 
   transition-property: background-color;
   @extend %transitDurTiming;
-}
 
-.form-btn:hover,
-.form-btn:focus {
-  background-color: var(--back-blue);
-}
-
-/* button */
-.form-submit {
-  display: flex;
-  justify-content: center;
-}
-
-.btn {
-  display: inline-flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: var(--white-text);
-  background-color: var(--back-blue);
-
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-}
-
-.form-btn {
-  margin-top: 30px;
-  padding-left: 55px;
-  padding-right: 55px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition-property: background-color;
-  @extend %transitDurTiming;
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background-color: var(--back-blue);
+  &:hover,
+  &:focus {
+    background-color: var(--back-blue);
+  }
 }
 
 /* -----footer form----- */
@@ -321,7 +277,7 @@
   margin-left: auto;
 }
 
-.footer-title {
+.footer-form__title {
   font-weight: 500;
   line-height: 1.172;
   text-transform: uppercase;
@@ -329,12 +285,12 @@
   color: var(--white-text);
 }
 
-.footer-form-label {
+.footer-form__label {
   display: inline-block;
   margin-top: 20px;
 }
 
-.footer-form-label .form-input {
+.footer-form__label .modal__form-input--footer {
   height: 50px;
   min-width: 358px;
 

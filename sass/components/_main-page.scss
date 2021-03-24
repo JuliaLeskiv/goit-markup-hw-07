@@ -65,10 +65,10 @@
 
 .feature__item {
   max-width: 270px;
-}
 
-.feature__item:not(:first-child) {
-  margin-left: 30px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .feature__wrapper {
@@ -247,17 +247,17 @@
 
   transition-property: fill;
   @extend %transitDurTiming;
-}
 
-.clients-list__item:not(:first-child) {
-  margin-left: 30px;
-}
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 
-.clients-list__item:focus,
-.clients-list__item:hover {
-  border: 1px solid var(--blue-text);
-  border-radius: 4px;
-  fill: var(--blue-text);
+  &:focus,
+  &:hover {
+    border: 1px solid var(--blue-text);
+    border-radius: 4px;
+    fill: var(--blue-text);
+  }
 }
 
 .clients-list__item:focus .clients-list__icon,

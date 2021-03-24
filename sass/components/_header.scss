@@ -42,14 +42,14 @@
   line-height: 16px;
 
   padding: 26px 0;
-}
 
-.link:hover,
-.link:focus {
-  color: #2196f3;
+  &:hover,
+  &:focus {
+    color: #2196f3;
 
-  --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
-  --transiton-duration-time: 250ms;
+    --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
+    --transiton-duration-time: 250ms;
+  }
 }
 
 .link.current {
@@ -83,31 +83,31 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-}
 
-.adress:hover,
-.adress:focus {
-  color: #2196f3;
+  &:hover,
+  &:focus {
+    color: #2196f3;
 
-  --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
-  --transiton-duration-time: 250ms;
+    --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
+    --transiton-duration-time: 250ms;
+  }
 }
 
 .header-adress__item:nth-child(2) {
   margin-left: 50px;
 }
 
-.header-adress__icon:hover {
-  color: #2196f3;
-
-  --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
-  --transiton-duration-time: 250ms;
-}
-
 .header-adress__icon {
   margin-top: 5px;
   margin-right: 10px;
   fill: currentColor;
+
+  &:hover {
+    color: #2196f3;
+
+    --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
+    --transiton-duration-time: 250ms;
+  }
 }
 
 .envelope-4 {
