@@ -47,8 +47,7 @@
   &:focus {
     color: #2196f3;
 
-    --timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
-    --transiton-duration-time: 250ms;
+    @extend %transitDurTiming;
   }
 }
 
@@ -93,12 +92,16 @@
   }
 }
 
-.header-adress__item:nth-child(2) {
-  margin-left: 50px;
+.header-adress__item {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2) {
+    margin-left: 50px;
+  }
 }
 
 .header-adress__icon {
-  margin-top: 5px;
   margin-right: 10px;
   fill: currentColor;
 

@@ -64,16 +64,14 @@
 
   transition-property: background-color;
   @extend %transitDurTiming;
-}
 
-.social__item--footer {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-}
 
-.social__item--footer:hover,
-.social__item--footer:focus {
-  background-color: var(--back-blue);
+  &:hover,
+  &:focus {
+    background-color: var(--back-blue);
+  }
 }
 
 .social__link--footer {
