@@ -39,11 +39,11 @@
 }
 
 /* -----Footer social styles----- */
-.footer-social {
+.footer-social__list {
   margin-left: 70px;
 }
 
-.social-social__title {
+.footer-social__title {
   font-weight: 500;
   line-height: 1.172;
   text-transform: uppercase;
@@ -51,13 +51,13 @@
   color: var(--white-text);
 }
 
-.social__card {
+.footer-social__card {
   margin-top: 16px;
   display: flex;
   justify-content: space-around;
 }
 
-.social__item--footer {
+.footer-social__item {
   display: flex;
   justify-content: center;
   border-radius: 50%;
@@ -74,26 +74,26 @@
   }
 }
 
-.social__link--footer {
+.footer-social__link {
   width: 44px;
   height: 44px;
 
   @include flexCenter;
 }
 
-.social__icon--footer {
+.footer-social__icon {
   fill: var(--social-link-color);
 
   transition-property: fill;
   @extend %transitDurTiming;
 }
 
-.social__icon--footer {
+.footer-social__icon {
   fill: var(--back-white);
 }
 
-.social__item--footer:hover .social__icon--footer,
-.social__item--footer:focus .social__icon--footer {
+.footer-social__item:hover .footer-social__icon,
+.footer-social__item:focus .footer-social__icon {
   fill: var(--white-text);
 }
 

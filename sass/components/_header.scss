@@ -2,7 +2,7 @@
 .header-nav,
 .header-nav__logo,
 .header-nav__navigation,
-.header-adress,
+.header-contacts__list,
 .contacts,
 .contacts-location {
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .header-nav,
-.header-adress {
+.header-contacts__list {
   justify-content: space-between;
   align-items: center;
 }
@@ -67,7 +67,7 @@
   content: '';
 
   position: absolute;
-  top: 76px;
+  top: 77px;
   left: 0;
 
   display: block;
@@ -79,11 +79,11 @@
   border-radius: 2px;
 }
 
-.header-adress {
+.header-contacts__list {
   margin-left: auto;
 }
 
-.adress {
+.header-contacts__link {
   color: var(--grey-text);
   font-style: normal;
   font-weight: 500;
@@ -99,7 +99,7 @@
   }
 }
 
-.header-adress__item {
+.header-contacts__item {
   display: flex;
   align-items: center;
 
@@ -108,7 +108,7 @@
   }
 }
 
-.header-adress__icon {
+.header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 

@@ -273,11 +273,11 @@
 }
 
 /* -----footer form----- */
-.footer-form {
+.page-footer__form {
   margin-left: auto;
 }
 
-.footer-form__title {
+.page-footer__title {
   font-weight: 500;
   line-height: 1.172;
   text-transform: uppercase;
@@ -285,12 +285,12 @@
   color: var(--white-text);
 }
 
-.footer-form__label {
+.page-footer__label {
   display: inline-block;
   margin-top: 20px;
 }
 
-.footer-form__label .modal__form-input--footer {
+.page-footer__label .page-footer__input {
   height: 50px;
   min-width: 358px;
 

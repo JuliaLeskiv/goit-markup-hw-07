@@ -3,6 +3,10 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.portfolio {
+  padding-top: 94px;
+}
+
 .visual-hidden {
   position: absolute;
   width: 1px;
@@ -16,14 +20,13 @@
   overflow: hidden;
 }
 
-.button-list {
+.filters__list {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 94px;
 }
 
-.button {
+.filters_button {
   color: var(--black-text);
   background: var(--back-grey-light);
   font-style: normal;
@@ -56,11 +59,11 @@
   }
 }
 
-.button-list__item:not(:first-child) {
+.filters__item:not(:first-child) {
   margin-left: 8px;
 }
 
-.project-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
@@ -70,7 +73,7 @@
   text-align: center;
 }
 
-.project-list__item {
+.project__item {
   margin-bottom: 30px;
   max-width: 370px;
   flex-basis: calc(100% / 3 - var(--item-set-gap));
@@ -79,29 +82,29 @@
   text-align: left;
 }
 
-.project-list__item .last-item {
+.project__item .last-item {
   margin-bottom: 0;
 }
 
-.project-list__link {
+.project__link {
   display: block;
 
   transition-property: box-shadow;
   @extend %transitDurTiming;
 }
 
-.project-list__link:focus,
-.project-list__link:hover {
+.project__link:focus,
+.project__link:hover {
   box-shadow: var(--card-box-shadow);
 }
 
-.project-wrapper {
+.project__wrapper {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
 }
 
-.project-list__title {
+.project__title {
   color: var(--black-text);
   font-style: normal;
   font-weight: 700;
@@ -111,7 +114,7 @@
   letter-spacing: 0.06em;
 }
 
-.project-list__text {
+.project__text {
   color: var(--grey-text);
   font-style: normal;
   font-weight: 400;
@@ -121,13 +124,13 @@
   margin-top: 4px;
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
   border-style: none;
   overflow: hidden;
 }
 
-.item-descr {
+.project__descr {
   position: absolute;
   top: 0;
   left: 0;
@@ -148,7 +151,7 @@
   }
 }
 
-.item-descr__text {
+.project__descr--text {
   color: var(--white-text);
   position: absolute;
   display: flex;
@@ -161,8 +164,8 @@
   left: 24px;
 }
 
-.project-list__link:hover .item-descr,
-.project-list__link:focus .item-descr {
+.project__link:hover .project__descr,
+.project__link:focus .project__descr {
   transform: translateX(0);
   opacity: 0.9;
 }

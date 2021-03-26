@@ -1,24 +1,24 @@
-.footer {
+.page-footer {
   background: var(--graphite);
   padding: 60px 0;
 }
 
-.footer .container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
 
-.footer__contacts {
+.page-footer__contacts {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-.contact__item:not(:first-child) {
+.page-footer__item:not(:first-child) {
   margin-top: 9px;
 }
 
-.contacts__location {
+.page-footer__location {
   color: var(--white-text);
   font-style: normal;
   font-weight: 400;
@@ -26,7 +26,7 @@
   line-height: 24px;
 }
 
-.contacts {
+.page-footer__link {
   color: var(--grey-text-op60);
   font-style: normal;
   font-weight: 400;
